@@ -10,6 +10,13 @@
  */
 
 ?>
+
+<div class="container mt-5 mb-5">
+    <div class="row col-4 offset-4 col-lg-2 offset-lg-5">
+      <img id="full-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/slider_logo.png" alt="Cavendish Logo">
+    </div>
+  </div>
+
 <!-- Footer -->
 <footer class="page-footer font-small dark-background  pt-4">
 
@@ -36,7 +43,7 @@
 
     <!-- Begin Mailchimp Signup Form -->
 <div id="mc_embed_signup">
-<form action="https://blackbooksoho.us17.list-manage.com/subscribe/post?u=64ab03f3af339dfeb72f5e5fe&amp;id=12fa2e0fcf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<form action="https://35newcavendish.us9.list-manage.com/subscribe/post?u=2379d81245e8a25273bb6565e&amp;id=2ac60d1bf6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
       <div class="row">
             <div class="md-form mb-0">
@@ -131,13 +138,16 @@
         <!-- Links -->
         <h2 class="h3-responsive font-weight-bold my-4">OPENING TIMES</h2>
     <!--Section description-->
-    <p class="no-line-break">Monday: <?php echo get_theme_mod('monday', 'Closed'); ?><p>
-    <p class="no-line-break">Tuesday: <?php echo get_theme_mod('tuesday', 'Closed'); ?><p>
-    <p class="no-line-break">Wednesday:  <?php echo get_theme_mod('wednesday', 'Closed'); ?><p>
-    <p class="no-line-break">Thursday: <?php echo get_theme_mod('thursday', 'Closed'); ?><p>
-    <p class="no-line-break">Friday: <?php echo get_theme_mod('friday', 'Closed'); ?><p>
-    <p class="no-line-break">Saturday <?php echo get_theme_mod('saturday', 'Closed'); ?><p>
-    <p class="no-line-break">Sunday: <?php echo get_theme_mod('sunday', 'Closed'); ?><p>
+
+    <p class="no-line-break">Monday to Friday</p>
+    <p class="no-line-break">12pm to 11pm</p>
+    <p class="">(kitchen 12pm to 9:30pm)</p>
+    <p class="no-line-break">Saturday</p>
+    <p class="no-line-break">12pm to 11pm </p>
+    <p class="">(kitchen 12pm to 9:30pm)</p>
+    <p class="no-line-break">Sunday</p>
+    <p class="no-line-break">12pm to 9:30pm </p>
+    <p class="no-line-break">(kitchen 12pm to 8pm)</p>
       </div>
       <!-- Grid column -->
 
@@ -145,7 +155,7 @@
       <div class="col-sm-6 col-lg-3">
 
         <!-- Links -->
-        <h2 class="h3-responsive font-weight-bold my-4">BLACK BOOK</h2>
+        <h2 class="h3-responsive font-weight-bold my-4">THE CAVENSDISH</h2>
     <!--Section description-->
    
   
@@ -156,27 +166,28 @@
    
         <ul class="list-unstyled">
           <li>
-          <i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;23 Frith Street, Soho 
+          <i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;35 NEW CAVENDISH ST<br>
+MARYLEBONE LONDON W1G 9TR
           </li>
           <li>
-              <a href="https://www.google.com/maps/place/TRADE+Soho/@51.5133559,-0.1333751,17z/data=!3m1!4b1!4m5!3m4!1s0x48760529ea75a7b3:0x89287c620f263591!8m2!3d51.5133559!4d-0.1311864?shorturl=1"><i class="fas fa-map-marked-alt mt-4"></i>&nbsp;&nbsp;View on Google Maps </a>
+              <a href="https://www.google.com/maps/place/The+Cavendish/@51.5189914,-0.150366,19z/data=!3m1!4b1!4m5!3m4!1s0x48761ad23537c223:0x70ca17932ab3ad5f!8m2!3d51.5190206!4d-0.1498228"><i class="fas fa-map-marked-alt mt-4"></i>&nbsp;&nbsp;View on Google Maps </a>
           </li>
           <li>
-          <a href="tel:+442074341724"><i class="fas fa-phone mt-4"></i>&nbsp;&nbsp;020 7434 1724 </a>
+          <a href="tel:+442074873030"><i class="fas fa-phone mt-4"></i>&nbsp;&nbsp;020 7487 3030 </a>
           </li>
           <li>
-          <a href="mailto:info@blackbooksoho.co.uk"><i class="fas fa-envelope mt-4"></i>&nbsp;&nbsp;info@blackbooksoho.co.uk</a>
+          <a href="mailto:info@35newcavendish.co.uk"><i class="fas fa-envelope mt-4"></i>&nbsp;&nbsp;info@35newcavendish.co.uk</a>
           </li>
           <li>
-          <a href="http://blackbooksoho.co.uk/careers"><i class="fa fa-rocket mt-4" aria-hidden="true"></i>&nbsp;&nbsp;Careers</a> 
+          <a href="careers"><i class="fa fa-rocket mt-4" aria-hidden="true"></i>&nbsp;&nbsp;Careers</a> 
           </li>
           <li>
-          <a href="http://blackbooksoho.co.uk/privacy-policy"><i class="fa fa-lock mt-4" aria-hidden="true"></i>&nbsp;&nbsp;Privacy Policy</a>
+          <a href="privacy-policy"><i class="fa fa-lock mt-4" aria-hidden="true"></i>&nbsp;&nbsp;Privacy Policy</a>
           </li>
           <li>  
-          <a href="https://www.facebook.com/The-Black-Book-Soho-220715369254758"><i class="fab fa-facebook-square fa-2x mt-4"></i> &nbsp;&nbsp;</a>
-          <a href="https://twitter.com/blackbooksoho"><i class="fab fa-twitter fa-2x mt-4"></i> &nbsp;&nbsp;</a>
-          <a href="https://www.instagram.com/theblackbooksoho/"><i class="fab fa-instagram fa-2x mt-4"></i> &nbsp;&nbsp;</a>
+          <a href="https://www.facebook.com/pg/35NewCavendish/about/"><i class="fab fa-facebook-square fa-2x mt-4"></i> &nbsp;&nbsp;</a>
+          <a href="https://twitter.com/35newcavendish"><i class="fab fa-twitter fa-2x mt-4"></i> &nbsp;&nbsp;</a>
+          <a href="https://www.instagram.com/35newcavendish/"><i class="fab fa-instagram fa-2x mt-4"></i> &nbsp;&nbsp;</a>
           </li>
           
         </ul>

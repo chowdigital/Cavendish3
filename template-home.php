@@ -3,11 +3,9 @@
 
 <div class="view full-page-intro z-depth-3">
 
-<video playsinline autoplay muted loop id="myVideo" class="view full-page-intro">
-  		<source src="<?php echo get_template_directory_uri(); ?>/assets/img/video/blackbook_1.0.mp4" type="video/mp4">
-  			<source src="<?php echo get_template_directory_uri(); ?>/assets/img/video/blackbook_1.0.webm" type="video/webm">
-  				<source src="<?php echo get_template_directory_uri(); ?>/assets/img/video/blackbook_1.0.ogg" type="video/ogg">
-		 </video>
+<div class="view full-page-intro" style="background-image: url(<?php the_field('welcome_image'); ?>); background-repeat: no-repeat; background-position: center; background-size: cover;">
+ 
+		 </div>
 <!-- Mask & flexbox options-->
 
 <div class="mask d-flex justify-content-center align-items-center">
@@ -19,13 +17,13 @@
     <div class="row wow fadeIn">
       <div class="white-content-box text-center">
   
-      <!--
+      
         <h1><?php the_field('welcome_title'); ?></h1>
       <p><?php the_field('welcome_body'); ?></p>
-      <a href="http://blackbooksoho.co.uk/book/"><button type="button" class="btn btn-primary waves-effect waves-light">Book A Table</button></a>
+      <a href="https://www.sevenrooms.com/reservations/thecavendishmarylebone"><button type="button" class="btn btn-primary waves-effect waves-light">Book a Table</button></a>
 
       
--->
+
       </div>
       
     </div>
@@ -52,7 +50,7 @@
 
   <div class="container pt-6 pb-6 z-depth-3">
     <div class="row">
-      <div class="menu-image-box col-12 col-lg-6" style="background-image: url(<?php the_post_thumbnail_url(); ?>); background-repeat: no-repeat; background-position: center; background-size: cover;">
+      <div class="menu-image-box col-12 col-lg-6 z-depth-3" style="background-image: url(<?php the_post_thumbnail_url(); ?>); background-repeat: no-repeat; background-position: center; background-size: cover;">
       
       </div>
       <div class="menu-content-box col-12 col-lg-6">
@@ -64,14 +62,15 @@
           endwhile; else: ?>
           <p>Sorry, no posts matched your criteria.</p>
           <?php endif; ?>
+          <a href="at-home"><button type="button" class="btn btn-primary waves-effect waves-light">Cavendish @ Home</button></a>
 
       </div>
     </div>
   </div>
 
   <div class="container">
-    <div class="row col-lg-6 offset-lg-3">
-      <img id="full-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="Black Book Soho Logo">
+    <div class="row col-4 offset-4 col-lg-2 offset-lg-5">
+      <img id="full-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/slider_logo.png" alt="Cavendish @ Home Logo">
     </div>
   </div>
 </main><!-- #main -->
@@ -80,15 +79,17 @@
 
 
 <main id="primary" class="site-main container  pt-6 pb-6">
-<div class="z-depth-3">
+
+    <section class="z-depth-3">
   <div class="menu-content-box col-12">
  
-  <h1 class="entry-title">Events</h1>
+  <h1 class="entry-title">What's On</h1>
+  <p>Order </p>
   <!--Grid row-->
   <div class="row wow fadeIn">
     <?php
     // The Query
-    $the_query = new WP_Query( 'cat=1&posts_per_page=4' );
+    $the_query = new WP_Query( 'cat=3&posts_per_page=3' );
     //posts_per_page=5'
 
 
@@ -101,7 +102,7 @@
 
 
         <!--Grid column-->
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-4 d-flex flex-column">
+        <div class="col-lg-4 col-md-4 col-sm-12 mb-4 d-flex flex-column">
      
 
             <!--Featured image-->
@@ -141,7 +142,7 @@
     <a href="events"><button type="button" class="btn btn-primary">All Events</button></a>
     </div>
     </div>
-    </div>
+    </section>
 </main>
 
 <?php get_footer(); ?>

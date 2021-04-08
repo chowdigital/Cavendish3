@@ -56,6 +56,7 @@ if ( ! function_exists( 'wordpress_bootstrap_starter_theme_entry_footer' ) ) :
 	/**
 	 * Prints HTML with meta information for the categories, tags and comments.
 	 */
+
 	function wordpress_bootstrap_starter_theme_entry_footer() {
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
